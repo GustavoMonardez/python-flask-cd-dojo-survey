@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dojo Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css')}}">
+</head>
+<body>
+    <div class="wrapper">
+    <h1>Dojo Survey</h1>
+        <form action="/result" method="POST">
+            <div class="form-group">
+                <label for="name">Your name</label>
+                <input type="text" name="name" class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="location">Dojo Location</label>
+                <select name="location" class="form-control">
+                    <option value="Select Location">Select Location</option>
+                    <option value="Seattle">Seattle</option>
+                    <option value="San Jose">San Jose</option>
+                    <option value="New York">New York</option>
+                    <option value="Silicon Valley">Silicon Valley</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="language">Favorite Language</label>
+                <select name="language" class="form-control">
+                    <option value="Select Language">Select Language</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                    <option value="C#">C#</option>
+                    <option value="Javascript">Javascript</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="comments">Comment (optional):</label>
+                <textarea name="comments" class="form-control" cols="30" rows="10"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

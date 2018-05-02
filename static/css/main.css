@@ -1,0 +1,12 @@
+
+
+h1{
+    width: 600px;
+    margin:20px auto;
+}
+form{
+    border:1px solid silver;
+    width: 600px;
+    padding:30px;
+    margin: auto;
+}
