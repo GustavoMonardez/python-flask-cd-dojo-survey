@@ -14,5 +14,10 @@ def result():
     comment = request.form["comments"]
     return render_template("result.html",name=name,location=location,language=language,comment=comment)
 
+@app.route("/danger")
+def danger():
+    print("user tried to visited /danger. redirecting to index page...")
+    return redirect("/")
+
 if __name__ == "__main__":
     app.run(debug=True)
