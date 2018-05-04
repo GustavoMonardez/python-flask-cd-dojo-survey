@@ -24,3 +24,9 @@ p{
 p span{
     font-weight: normal;
 }
+
+.msg{
+    color:darkred;
+    margin-bottom:0px;
+    font-weight: normal;
+}
